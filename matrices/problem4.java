@@ -5,7 +5,7 @@ class FindRowWithMaximum1s // return the index of the row(0 based index)
     public static int max1sRowIndex(int[][] matrix, int rows, int cols) {
         if (matrix == null)
             return Integer.MIN_VALUE;
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int res = 0;
         for (int i = 0; i < rows; i++) {
             int left = 0, right = cols - 1;
@@ -27,7 +27,7 @@ class FindRowWithMaximum1s // return the index of the row(0 based index)
     }
 
     public static void main(String[] args) {
-        int[][] matrix = new int[][] { { 0, 0, 1, 1 }, { 0, 1, 1, 1 }, { 0, 0, 0, 0 }, { 0, 0, 1, 1 } };
+        int[][] matrix = new int[][] { { 0, 0, 0, 1 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 1, 1 } };
         int res = max1sRowIndex(matrix, matrix.length, matrix[0].length);
         System.out.println(res);
     }

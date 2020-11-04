@@ -1,0 +1,7 @@
+The question is to print the boundary traversal of a binary tree in anti-clockwise order.
+This can be done using the left side view, bottom side view, right side view.
+Combinely these 3 will give us the boundary traversal of a binary tree.
+
+
+
+Obviously there might be more simple and better solutions, will look into them and update the file later.
